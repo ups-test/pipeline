@@ -1,5 +1,7 @@
 pipeline{
-    agent any
+    agent {
+    label "prash-ms-build"
+    }
     stages{
         stage("build"){
             steps{
